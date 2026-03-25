@@ -20,6 +20,29 @@ const testimonials = [
       '“Francis Fitzgibbon worked in Radio Kerry in several roles - as a journalist, producer\n'+
       'and presenter. His people skills, creativity and insights were clear to both colleagues\n'+
       'and listeners. He brings energy and commitment to all he does”',
+  },
+  {
+    name: 'Sinéad Ronan',
+    description: 'CEO County Kildare Chamber',
+    image: '/assets/testimonial-fs.webp',
+    message:
+      '“Francis\'s media training course content is excellent. He tailors the whole session to you and your needs. It has broadened my knowledge in communications and has given me a lot more confidence in conducting my work. I found the interview training especially beneficial, and Francis gave me a number of techniques to put into practice to make me feel more comfortable and confident in that particular medium”',
+  },
+
+  {
+    name: 'Ruth Deasy',
+    description: 'Former Press Spokesperson for the European Commission in Ireland',
+    image: '/assets/testimonial-fs.webp',
+    message:
+      '“Francis understood exactly what we were trying to do and brought it to life in a way we could never have. His political savvy and creative flair, combined with efficiency, gave us a product to be proud of. I have no hesitation in recommending him”',
+  },
+
+  {
+    name: 'Sarah Carey',
+    description: 'Columnist with the Irish Independent',
+    image: '/assets/testimonial-fs.webp',
+    message:
+      '“Francis Fitzgibbon is the most insightful media professional I’ve worked with. As an executive producer with Newstalk, he understood messaging, politics, and what makes a great piece for radio. He produced my show Talking Point with Sarah Carey and I found him to be a keen listener with an open mind who was able to mould instincts and ideas into a clear narrative. His insights into Irish society and culture, both modern and traditional, means he understands how to shape clear, compelling messages that work on air and in the wider media. Anyone preparing for broadcast would be in very capable hands with Francis.”',
   }
 ];
 ---
@@ -31,22 +54,22 @@ const testimonials = [
         What clients say
       </h2>
       <div
-        class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-2 lg:divide-x lg:divide-y-0"
+        class="divide-primary-900/10 dark:divide-primary-300/10 grid divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0"
       >
         {
           testimonials.map((testimonial) => (
             <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
               <div class="flex flex-row gap-2">
                 {[...Array(3)].map(() => (
-                  <svg
-                    class="text-primary-600 dark:text-primary-400 h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" />
-                  </svg>
+                  <!--<svg-->
+                  <!--  class="text-primary-600 dark:text-primary-400 h-6 w-6"-->
+                  <!--  xmlns="http://www.w3.org/2000/svg"-->
+                  <!--  viewBox="0 0 24 24"-->
+                  <!--  fill="currentColor"-->
+                  <!--  aria-hidden="true"-->
+                  <!--&gt;-->
+                  <!--  <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" />-->
+                  <!--</svg>-->
                 ))}
               </div>
               <blockquote class="text-primary-950/70 dark:text-primary-200/70 text-center text-lg italic leading-loose">
